@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 第1层：金色背景（最外层） -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#D4AF37"/>
+            <corners android:radius="24dp"/>
+        </shape>
+    </item>
+    <!-- 第2层：白色内芯 -->
+    <item
+        android:left="4dp"
+        android:top="4dp"
+        android:right="4dp"
+        android:bottom="4dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF"/>
+            <corners android:radius="20dp"/>
+        </shape>
+    </item>
+    <!-- 第3层：图标 -->
+    <item
+        android:left="16dp"
+        android:top="16dp"
+        android:right="16dp"
+        android:bottom="16dp">
+        <bitmap
+            android:src="@drawable/icon_source"
+            android:gravity="fill"/>
+    </item>
+</layer-list>
